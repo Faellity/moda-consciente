@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReVeste — Estilo com propósito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#inicio">RE<span>V</span>ESTE.</a>
+  <nav class="nav">
+    <a href="#inicio">INÍCIO</a>
+    <a href="#doar">QUERO DOAR</a>
+    <a href="#brechos">BRECHÓS</a>
+    <a href="#descarte">DESCARTE</a>
+    <a href="#sobre">SOBRE O PROJETO</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div>
+      <p class="eyebrow">Moda circular • Guarulhos e região</p>
+      <h1>Seu estilo.<br><em>Novos caminhos.</em></h1>
+      <p>
+        Se vestir não é só sobre roupas, é sobre quem você é.
+        Descubra formas de renovar seu guarda-roupa, doar peças
+        e fazer escolhas mais conscientes.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="#doar">QUERO FAZER UMA DOAÇÃO</a>
+        <a class="btn secondary" href="#brechos">ENCONTRAR BRECHÓS</a>
+        <a class="btn" href="#descarte">COMO DESCARTAR?</a>
+      </div>
+    </div>
+
+    <aside class="poster">
+      <p class="eyebrow">Peça por peça</p>
+      <div class="big">VISTA<br>IDEIAS.<br>MUDE<br>HÁBITOS.</div>
+      <p class="stitch">REUTILIZAR TAMBÉM É TER ESTILO.</p>
+    </aside>
+  </section>
+
+  <section class="section" id="atalhos">
+    <div class="section-head">
+      <h2>Por onde você quer começar?</h2>
+      <p>Escolha uma opção e encontre o caminho que faz sentido para você.</p>
+    </div>
+
+    <div class="grid">
+      <article class="tile">
+        <span class="number">01 / DOAÇÃO</span>
+        <h3>Quero fazer uma doação</h3>
+        <p>Aprenda a separar suas roupas e encontre iniciativas de doação.</p>
+        <a href="#doar">VER COMO DOAR →</a>
+      </article>
+
+      <article class="tile">
+        <span class="number">02 / GARIMPO</span>
+        <h3>Brechós acessíveis</h3>
+        <p>Conheça a proposta de comprar roupas de segunda mão.</p>
+        <a href="#brechos">ENCONTRAR BRECHÓS →</a>
+      </article>
+
+      <article class="tile">
+        <span class="number">03 / DESCARTE</span>
+        <h3>Como descartar roupas?</h3>
+        <p>Descubra o que fazer com peças danificadas.</p>
+        <a href="#descarte">APRENDER A DESCARTAR →</a>
+      </article>
+
+      <article class="tile">
+        <span class="number">04 / CAMPANHAS</span>
+        <h3>Campanhas de agasalhos</h3>
+        <p>Entenda como funcionam as campanhas de arrecadação.</p>
+        <a href="#doar">SAIBA MAIS →</a>
+      </article>
+
+      <article class="tile">
+        <span class="number">05 / SUSTENTABILIDADE</span>
+        <h3>Moda e meio ambiente</h3>
+        <p>Conheça os impactos ambientais da indústria têxtil.</p>
+        <a href="#descarte">ENTENDER O IMPACTO →</a>
+      </article>
+
+      <article class="tile">
+        <span class="number">06 / NOSSA IDEIA</span>
+        <h3>Conheça o projeto</h3>
+        <p>Saiba por que criamos o ReVeste.</p>
+        <a href="#sobre">SOBRE O REVESTE →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section dark-section" id="doar">
+    <div class="section-head">
+      <h2>Quero fazer uma doação</h2>
+      <p>Uma peça que não faz mais sentido para você pode ser útil para outra pessoa.</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Antes de doar</h3>
+        <div class="tips">
+          <div class="tip">
+            <strong>01. Confira a peça</strong><br>
+            Priorize roupas limpas e em boas condições.
+          </div>
+          <div class="tip">
+            <strong>02. Separe os itens</strong><br>
+            Organize roupas, calçados e acessórios.
+          </div>
+          <div class="tip">
+            <strong>03. Confirme as regras</strong><br>
+            Verifique quais itens a instituição aceita.
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Encontre uma iniciativa</h3>
+        <p>Escolha o tipo de doação para receber orientações.</p>
+
+        <div class="field">
+          <label for="tipoDoacao">O que você quer encontrar?</label>
+          <select id="tipoDoacao">
+            <option value="roupas">Doação de roupas</option>
+            <option value="agasalhos">Campanha de agasalhos</option>
+            <option value="textil">Descarte de tecidos</option>
+          </select>
+        </div>
+
+        <button class="btn" id="buscarDoacao" type="button">
+          VER ORIENTAÇÕES
+        </button>
+
+        <div class="result" id="resultadoDoacao"></div>
+        <p class="note">
+          Os pontos de coleta reais precisam ser confirmados antes da publicação.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="brechos">
+    <div class="section-head">
+      <h2>Brechós e garimpos</h2>
+      <p>Renove seu estilo e prolongue a vida útil das roupas.</p>
+    </div>
+
+    <div class="location-box">
+      <h3>Encontre seu próximo garimpo</h3>
+      <p>
+        O ReVeste poderá reunir brechós de Guarulhos com endereço,
+        preços, horários e contatos.
+      </p>
+      <p>
+        <strong>Próxima etapa:</strong> adicionar brechós verificados
+        e informações atualizadas.
+      </p>
+      <a class="btn" href="#sobre">CONHEÇA A PROPOSTA</a>
+    </div>
+  </section>
+
+  <section class="section" id="descarte">
+    <div class="section-head">
+      <h2>Moda consciente, passo a passo</h2>
+      <p>Pequenas decisões ajudam a reduzir o desperdício.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="panel">
+        <h3>Como pensar no descarte</h3>
+        <div class="tips">
+          <div class="tip">
+            <strong>Se ainda dá para usar</strong><br>
+            Considere doar, trocar, vender ou consertar.
+          </div>
+          <div class="tip">
+            <strong>Se está danificada</strong><br>
+            Procure iniciativas que aceitem resíduos têxteis.
+          </div>
+          <div class="tip">
+            <strong>Evite o desperdício</strong><br>
+            Reparar e reutilizar pode prolongar a vida da peça.
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Por que falar de poliéster?</h3>
+        <p>
+          O poliéster é uma fibra sintética muito usada na moda.
+          Durante a lavagem, tecidos sintéticos podem liberar
+          microfibras que chegam ao ambiente aquático.
+        </p>
+        <p>
+          Cuidar das peças e prolongar seu uso são atitudes
+          que ajudam a reduzir desperdícios.
+        </p>
+      </div>
+    </div>
+
+    <div class="panel search-panel">
+      <label for="buscaDica"><strong>BUSCAR UM TEMA</strong></label>
+      <input class="search" id="buscaDica"
+        placeholder="Ex.: poliéster, doação, conserto...">
+
+      <div class="tips" id="listaDicas">
+        <div class="tip" data-words="poliéster microfibra lavagem sintético">
+          <strong>Poliéster e microfibras</strong><br>
+          Entenda os impactos das fibras sintéticas.
+        </div>
+        <div class="tip" data-words="doação roupas campanha agasalho">
+          <strong>Doar com responsabilidade</strong><br>
+          Confira as condições das peças e as regras da instituição.
+        </div>
+        <div class="tip" data-words="reparo conserto reutilizar costura">
+          <strong>Reparar antes de descartar</strong><br>
+          Um conserto pode prolongar o uso de uma roupa.
+        </div>
+        <div class="tip" data-words="brechó segunda mão garimpo comprar">
+          <strong>Comprar de segunda mão</strong><br>
+          Explore peças que já existem.
+        </div>
+      </div>
+
+      <p id="semResultado" class="note" hidden>
+        Nenhum tema encontrado. Tente outra palavra.
+      </p>
+    </div>
+  </section>
+
+  <section class="section dark-section" id="sobre">
+    <div class="section-head">
+      <h2>Sobre o ReVeste</h2>
+      <p>Um projeto que conecta estilo, reutilização e informação.</p>
+    </div>
+
+    <div class="panel">
+      <p>
+        Somos uma equipe com o objetivo de facilitar sua busca
+        por novas oportunidades na construção do seu estilo,
+        porque se vestir não é só sobre roupas, é sobre quem você é.
+      </p>
+      <p>
+        Nosso principal propósito é ajudar você a encontrar pontos
+        de coleta e instituições que realizam doações de roupas,
+        além de brechós com preços acessíveis. Também buscamos
+        incentivar a sustentabilidade na moda, compartilhando
+        informações sobre o descarte correto de roupas, campanhas
+        de arrecadação e os impactos ambientais da indústria têxtil.
+      </p>
+    </div>
+  </section>
+</main>
+
+<div class="pixel-line"></div>
+
+<footer>
+  <a class="brand" href="#inicio">RE<span>V</span>ESTE.</a>
+  <p>
+    Projeto acadêmico sobre moda consciente e reutilização.
+  </p>
+  <a href="#inicio">VOLTAR AO TOPO ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

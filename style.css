@@ -1,0 +1,402 @@
+:root {
+    --paper: #f5efd9;
+    --ink: #23372c;
+    --green: #315744;
+    --green-dark: #203c2c;
+    --orange: #d96f45;
+    --yellow: #e8c86b;
+    --card: #fff9e9;
+    --line: #294534;
+    --muted: #667267;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+.topbar {
+    background: var(--green-dark);
+    color: #f7f1db;
+    border-bottom: 4px solid var(--orange);
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    font-family: "Courier New", monospace;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.brand span {
+    color: var(--yellow);
+}
+
+.nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    font-family: "Courier New", monospace;
+    text-decoration: none;
+    border: 1px solid #91ae91;
+    padding: 7px 10px;
+    font-size: 0.85rem;
+}
+
+.nav a:hover {
+    background: var(--yellow);
+    color: var(--green-dark);
+}
+
+.hero {
+    padding: 64px 6% 48px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 36px;
+    align-items: center;
+    background: var(--paper);
+    border-bottom: 2px dashed var(--line);
+}
+
+.eyebrow {
+    font: 700 0.8rem "Courier New", monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Courier New", monospace;
+    line-height: 1.15;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 5.2rem);
+    margin-bottom: 18px;
+    letter-spacing: -3px;
+}
+
+h1 em {
+    font-style: normal;
+    color: var(--green);
+}
+
+.hero p {
+    max-width: 680px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 46px;
+    padding: 11px 16px;
+    border: 2px solid var(--green-dark);
+    background: var(--green);
+    color: #fffdf0;
+    text-decoration: none;
+    font: 700 0.9rem "Courier New", monospace;
+    box-shadow: 4px 4px 0 var(--green-dark);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--green-dark);
+}
+
+.btn.secondary {
+    background: var(--orange);
+    color: #241e17;
+}
+
+.poster {
+    border: 3px solid var(--green-dark);
+    background: var(--yellow);
+    color: #263d2c;
+    padding: 24px;
+    box-shadow: 8px 8px 0 var(--orange);
+    transform: rotate(1deg);
+}
+
+.poster .big {
+    font: 900 clamp(2rem, 4vw, 3.4rem)/0.95 "Courier New", monospace;
+    letter-spacing: -2px;
+}
+
+.stitch {
+    border-top: 2px dashed #263d2c;
+    margin-top: 16px;
+    padding-top: 12px;
+    font: 700 0.78rem "Courier New", monospace;
+}
+
+.section {
+    padding: 58px 6%;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.section-head h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 0;
+}
+
+.section-head p {
+    max-width: 480px;
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.tile {
+    background: var(--card);
+    border: 2px solid var(--line);
+    padding: 22px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tile .number {
+    font: 700 0.8rem "Courier New", monospace;
+    color: var(--orange);
+    margin-bottom: 16px;
+}
+
+.tile h3 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.tile p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    flex: 1;
+}
+
+.tile a {
+    font: 700 0.88rem "Courier New", monospace;
+    color: var(--green);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.dark-section {
+    background: var(--green-dark);
+    color: #f7f1db;
+}
+
+.dark-section .section-head p {
+    color: #c8d6c5;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.panel {
+    padding: 25px;
+    background: var(--card);
+    color: var(--ink);
+    border: 2px solid var(--line);
+}
+
+.panel h3 {
+    font-size: 1.4rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 14px 0;
+}
+
+.field label {
+    font: 700 0.85rem "Courier New", monospace;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+    border-radius: 0;
+}
+
+.tips {
+    display: grid;
+    gap: 12px;
+}
+
+.tip {
+    border: 1px dashed var(--line);
+    padding: 16px;
+}
+
+.tip strong {
+    font-family: "Courier New", monospace;
+}
+
+.note {
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+
+.result {
+    margin-top: 14px;
+    padding: 12px;
+    border-left: 4px solid var(--orange);
+    background: var(--paper);
+    color: var(--ink);
+    display: none;
+}
+
+.search {
+    max-width: 420px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--line);
+    background: var(--card);
+    color: var(--ink);
+    font: inherit;
+    margin-top: 10px;
+}
+
+.search-panel {
+    margin-top: 20px;
+}
+
+.location-box {
+    padding: 25px;
+    border: 2px dashed var(--orange);
+    background: var(--card);
+}
+
+.pixel-line {
+    height: 10px;
+    background: repeating-linear-gradient(90deg,
+            var(--orange) 0 16px,
+            transparent 16px 22px,
+            var(--yellow) 22px 38px,
+            transparent 38px 44px);
+}
+
+footer {
+    background: var(--green-dark);
+    color: #a1c5a3;
+    padding: 28px 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0;
+    max-width: 700px;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 42px;
+    }
+
+    .poster {
+        max-width: 500px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 42px 5%;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .nav a {
+        font-size: 0.78rem;
+    }
+}
